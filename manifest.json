@@ -1,0 +1,45 @@
+{
+  "name": "Twitter : Unfollower(2021) !",
+  "background": {
+        "scripts": [
+            "src/bg/background.js"
+        ]
+    },
+  "version": "0.0.4",
+  "manifest_version": 2,
+  "description": "very simple Macro unfollower for twitter",
+  "homepage_url": "http://frxangelz.blogspot.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "Twitter unfollower",
+    "default_popup": "src/browser_action/browser_action.html"
+  },
+  "permissions": [
+    "contentSettings",
+    "background",
+    "cookies",
+    "fileBrowserHandler",
+    "idle",
+    "notifications",
+    "tabs",
+    "http://*.twitter.com/*",
+    "https://twitter.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+	"js/jquery/jquery.min.js",
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}
