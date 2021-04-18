@@ -31,11 +31,10 @@ chrome.runtime.onMessage.addListener(
 	if(request.action == "inc"){
 	
 		var message = {status: true};
-		config.total++;
 		if(config.total >= config.max){
 			message.status = false;
-			config.enable = 0;
-		}
+			//config.enable = 0;
+		} else { config.total++; }
 		sendResponse(message);
 		chrome.runtime.sendMessage({action: 'count',value: config.total,enable: config.enable},function(response){});
 		return;

@@ -62,10 +62,6 @@ function unfollow(){
 	
 	var txt;
 	for(var i=0; i<btns.length;i++){
-		txt = btns[i].textContent;
-		if(!txt){ continue; }
-		if(txt.indexOf("Following") === -1) { continue; }
-
         console.log("Unfollow !");
 		config.total++;
         click_action = tick_count;
@@ -131,7 +127,9 @@ chrome.runtime.onMessage.addListener(
 				console.log("removed");
 				info.parentNode.removeChild(info);
 			}
-			
+			config.total = 0;
+			overlimit = false;
+			first = true;
 		}
 	}
 });
