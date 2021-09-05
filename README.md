@@ -6,8 +6,8 @@ twitter unfollower macro is the best tool for easy and quick twitter unfollow. i
 
 you can set min-max interval between unfollow action( in seconds ), to make it more random, you should keep interval between 5-30.
 
-Youtube Video :
-https://www.youtube.com/watch?v=AUcy9a6TDpw
+Demo and how to :
+https://www.youtube.com/watch?v=E3U4J9BdL5w
 
-My Youtube Channel:
-https://www.youtube.com/c/freeangelz?sub_confirmation=1
+Please subscribe:
+https://www.youtube.com/channel/UCqRqvw9n7Lrh79x3dRDOkDg
